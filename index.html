@@ -1,0 +1,60 @@
+<html>
+    <head><title>Happy Birthday!</title></head>
+    <body style="background-color: rgb(0, 179, 255); text-align: center;">
+        <br/>
+        <br/>
+        <h1 style="text-align: center; font-family: Archivo Black
+;">Happy Birthday Ashley!</h1>
+    </body>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+
+
+</html>
+
+ <button onclick="myFunction()">¡Feliz cumpleaños!</button>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <button onclick="myFunction1()">Talk</button>
+
+<script>
+    function myFunction() {
+      let pass = prompt("What is your name?");
+      if ( pass == "Ashley" || pass == "ashley") {
+        alert("¡Feliz cumpleaños!")
+      };
+    }
+    function myFunction1() {
+        alert("How did your day go?");
+        let convo = prompt("A - Bad     or     B - Great");
+        if (  convo == "A" || convo == "a" || convo == "Bad" || convo == "bad") {
+           let answer = confirm("Why? Do you want to talk about it?");
+           if (answer == false ) {
+            alert("Okay then.");
+           } else if ( answer == true) {
+            alert("Would you like to talk about it over instagram?");
+            let answer2 = confirm("Or do you fell more comfortable here?");
+            if ( answer2 == true ) {
+                alert("Alright then I'm waiting.");
+            } else {
+                prompt("Okay then continue.");
+            }
+           }
+        } else if ( convo == "B" || convo == "b" || convo == "Great" || convo == "great") { 
+            alert("Awesome!");
+            prompt("What did you like?");
+            alert("Thats great.");
+            alert("I just wanted to wish you a happy birtday.");
+            alert("I'm glad that you're having a good time.");
+            alert("See you at school then!");
+        }
+       
+    }
+</script>
